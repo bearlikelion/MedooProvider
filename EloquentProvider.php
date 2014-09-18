@@ -1,7 +1,7 @@
 <?php
 namespace Bearlikelion;
 
-use Illuminate\Database\Capsule\Manager;
+use Illuminate\Database\Capsule\Manager as Capsule;
 
 use Autarky\Kernel\ServiceProvider;
 use Autarky\Container\ContainerInterface;
