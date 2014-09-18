@@ -1,5 +1,5 @@
 {
-	"name": "bearlikelion/EloquentProvider",
+	"name": "bearlikelion/eloquent-provider",
 	"type": "library",
 	"description": "Service Provider for use of the Eloquent ORM in the Autarky framework.",
 	"keywords": ["eloquent", "ORM", "Autarky"],
