@@ -12,7 +12,7 @@ class MedooProvider extends ServiceProvider
 	{
 		$connection = $this->app->getConfig()->get("database.connection");
 		$this->app->getContainer()->share('Medoo', function() {
-			$db = new medoo($this->app->getConfig()->get("database.connections.$connection"));
+			$db = new \medoo($this->app->getConfig()->get("database.connections.$connection"));
 			return $db;
 		});
 	}
