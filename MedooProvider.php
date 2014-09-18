@@ -16,6 +16,6 @@ class MedooProvider extends ServiceProvider
 			return $db;
 		});
 
-		$this->app->getContainer()->alias('DB', 'medoo');
+		$this->app->getContainer()->alias('DB', 'Medoo');
 	}
 }
