@@ -5,14 +5,15 @@ use Autarky\Kernel\ServiceProvider;
 use Autarky\Container\ContainerInterface;
 
 /**
- * Service provider for laravel's Eloquent ORM
+ * Service provider for the Medoo ORM
  */
 class MedooProvider extends ServiceProvider
 {
 	public function register()
 	{
+		$connection = $this->app->getConfig()->get("database.connection");
 		$this->app->share('Medoo', function() {
-			$db = new medoo;
+			$db = new medoo($this->app->getConfig()->get("database.connections.$connection"));
 			return $db;
 		});
 	}
