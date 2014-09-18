@@ -10,10 +10,12 @@ class MedooProvider extends ServiceProvider
 {
 	public function register()
 	{
-		$connection = $this->app->getConfig()->get("database.connection");
 		$this->app->getContainer()->share('Medoo', function() {
+			$connection = $this->app->getConfig()->get("database.connection");
 			$db = new \medoo($this->app->getConfig()->get("database.connections.$connection"));
 			return $db;
 		});
+
+		$this->app->getContainer()->alias('DB', 'medoo');
 	}
 }
