@@ -16,7 +16,7 @@ class EloquentProvider extends ServiceProvider
 		$this->app->share('Illuminate\Database\Capsule\Manager', function() {
 		    $capsule = new Capsule;
 		    $connection = $this->app->getConfig()->get("database.connection");
-		    $capsule->addConnection($this->app->getConfig()->get("database.connections.$connection");
+		    $capsule->addConnection($this->app->getConfig()->get("database.connections.$connection"));
 		    return $capsule;
 		});
 
