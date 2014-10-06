@@ -12,8 +12,8 @@ class MedooProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		$containter = $this->app->getContainer();
-		$containter->define('Medoo', function() {
+		$container = $this->app->getContainer();
+		$container->define('Medoo', function() {
 			$connection = $this->app->getConfig()->get("database.connection");
 			$db = new \medoo($this->app->getConfig()->get("database.connections.$connection"));
 			return $db;
