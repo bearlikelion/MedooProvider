@@ -1,6 +1,5 @@
 <?php
 namespace Bearlikelion;
-
 use Autarky\Kernel\ServiceProvider;
 
 /**
@@ -8,14 +7,20 @@ use Autarky\Kernel\ServiceProvider;
  */
 class MedooProvider extends ServiceProvider
 {
+	/**
+	 * Register the service provider
+	 */
 	public function register()
 	{
-		$this->app->getContainer()->share('Medoo', function() {
+		$containter = $this->app->getContainer();
+		$containter->define('Medoo', function() {
 			$connection = $this->app->getConfig()->get("database.connection");
 			$db = new \medoo($this->app->getConfig()->get("database.connections.$connection"));
 			return $db;
 		});
 
-		$this->app->getContainer()->alias('DB', 'Medoo');
+		$container->share('Medoo');
+
+		$container->alias('Medoo', 'DB');
 	}
 }

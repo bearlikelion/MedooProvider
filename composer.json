@@ -13,7 +13,7 @@
 	"require": {
 		"php": ">=5.3.0",
 		"catfan/medoo": "0.9.*",
-		"autarky/framework": "*"
+		"autarky/framework": "0.5.*"
 	},
 	"autoload": {
 		"files": ["MedooProvider.php"]
