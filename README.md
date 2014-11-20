@@ -1,6 +1,8 @@
 ## Autarky Medoo Provider
 
-[Medoo](https://github.com/catfan/Medoo) is a lightweight easy and powerful database framework compatible with various databases including MySQL, MSSQL, SQLite, MariaDB, Sybase, Oracle, PostgreSQL and more. [Autarky](https://github.com/autarky/framework) is a PHP framework aimed at developers wit a focus on freedom of choice.
+[Medoo](https://github.com/catfan/Medoo) is a lightweight easy and powerful database framework compatible with various databases including MySQL, MSSQL, SQLite, MariaDB, Sybase, Oracle, PostgreSQL and more.
+
+[Autarky](https://github.com/autarky/framework) is a PHP framework aimed at developers wit a focus on freedom of choice.
 
 ### Usage Instructions
 
