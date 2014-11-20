@@ -2,14 +2,10 @@
 namespace Bearlikelion;
 use Autarky\Kernel\ServiceProvider;
 
-/**
- * Service provider for the Medoo ORM
- */
+/** Autarky service provider for the Medoo ORM */
 class MedooProvider extends ServiceProvider
 {
-	/**
-	 * Register the service provider
-	 */
+	/** Register the service provider */
 	public function register()
 	{
 		$container = $this->app->getContainer();
