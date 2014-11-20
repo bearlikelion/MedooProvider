@@ -7,7 +7,6 @@
 First, update database config to use a new, Medoo specific connection.
 
 ```PHP
-<?php
 return [
 	/** The connection to use. */
 	'connection' => 'medoo',
@@ -28,21 +27,17 @@ return [
 		]
 	]
 ];
-?>
 ```
 
 Once configured, you can resolve Medoo using Autarky's container
 
 ```PHP
-<?
-	...
 	$container = $this->app->getContainer();
 	$db = $container->resolve('Medoo'); // Medoo is also aliased as DB
 
 	$student = $db->get('students', '*', [
 		'name' => 'Bobby Tables'
 	]);
-?>
 ```
 
 For further documentation on using Medoo, please consult the [documentation](http://medoo.in/doc).
