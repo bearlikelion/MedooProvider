@@ -1,7 +1,7 @@
 {
 	"name": "bearlikelion/medoo-provider",
 	"type": "library",
-	"description": "Service Provider for use of the Eloquent ORM in the Autarky framework.",
+	"description": "Service Provider for use of the Medoo ORM in the Autarky framework.",
 	"keywords": ["medoo", "ORM", "Autarky"],
 	"license": "MIT",
 	"authors": [
